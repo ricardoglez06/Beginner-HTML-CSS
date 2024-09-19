@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+}
+
+.iconos {
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    width: 80px;
+    border-radius: 50px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    transition: width 1s;
+}
+
+.iconos:hover {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.iconos:hover > img {
+    display: none;
+}
+
+.icono1:hover {
+    background: linear-gradient(to right, rgba(169, 36, 172, 0.7), rgba(245, 40, 145, 0.7))
+}
+
+.icono1:hover::after {
+    content: "HOME";
+}
+
+.icono2:hover {
+    background: linear-gradient(to right, rgba(36, 118, 172, 0.7), rgba(46, 79, 179, 0.7))
+}
+
+.icono2:hover::after {
+    content: "MESSAGES";
+}
+
+.icono3:hover {
+    background: linear-gradient(to right, rgba(226, 162, 24, 0.7), rgba(216, 65, 15, 0.7))
+}
+
+.icono3:hover::after {
+    content: "FAVOURITE";
+}
+
+.icono4:hover {
+    background: linear-gradient(to right, rgba(74, 223, 94, 0.7), rgba(15, 216, 179, 0.7))
+}
+
+.icono4:hover::after {
+    content: "VIDEOS";
+}
+
+.icono5:hover {
+    background: linear-gradient(to right, rgba(245, 40, 145, 0.7), rgba(169, 36, 172, 0.7))
+}
+
+.icono5:hover::after {
+    content: "PHOTOS";
+}
+

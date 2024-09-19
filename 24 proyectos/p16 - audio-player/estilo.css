@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(219, 46, 46), rgb(211, 204, 110));
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.card__img {
+    position: relative;
+    left: -12px;
+    width: 106%;
+}
+
+.card__audio {
+    position: relative;
+    width: 400px;
+}
+
+.card__audio audio {
+    width: 100%;
+}

@@ -1,0 +1,121 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    overflow-y: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,450px),450px));
+    grid-auto-rows: 600px;
+    margin: 75px 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container {
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.container__card {
+    width:90%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+    border-radius: 25px;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 45px 45px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container__card::after {
+    content: "";
+    color: black;
+    font-size: 150px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    filter: opacity(5%);
+}
+
+.container__card1::after {
+    content: "01";
+}
+
+.container__card2::after {
+    content: "02";
+}
+
+.container__card3::after {
+    content: "03";
+}
+
+.card__h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+    margin-bottom: 15px;
+}
+
+.card__p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.card__a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(28, 116, 205);
+    font-size: 1.2rem;
+    padding: 13px 20px;
+    border-radius: 25px; 
+}
+
+.container__card:hover {
+    transform: translateY(-75px);
+    background: linear-gradient(to top, rgba(74, 10, 158, 0.5), rgb(74, 10, 158));
+}
+
+.container__card:hover h3 {
+    color: white;
+}
+
+.container__card:hover p {
+    color: white;
+}
+
+.container__card:hover .card__a {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+@media screen and (max-width:1500px) {
+    body {
+        overflow-y:visible;
+    }
+}

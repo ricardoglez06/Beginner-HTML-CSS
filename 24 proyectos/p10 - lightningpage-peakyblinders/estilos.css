@@ -1,0 +1,268 @@
+* {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%),url(https://images5.alphacoders.com/885/885513.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img > img {
+    position: relative;
+    width: auto;
+    max-height: 60px;
+    margin: 20px 0;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    max-width: 100px;
+}
+
+.header-search {
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.search-icon{
+    position: relative;
+    width: auto;
+    height: 25px;
+    top: 2px;
+    margin: 0 10px;
+}
+
+.search-input {
+    width: 90%;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-weight: bolder;
+    caret-color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.input:focus {
+    outline: none;
+    cursor: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.input::placeholder {
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.input:focus::placeholder {
+    color: transparent;
+}
+
+ /*---------------------------------------*/
+
+article{
+    height: 900px;
+    margin: 0 20px;
+}
+
+.article-title {
+    position: relative;
+    top: 250px;
+    left: 0; 
+}
+
+.article-title > img {
+    width: auto;
+    max-height: 200px;
+}
+
+.article-features {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 250px;
+}
+
+.features {
+    border-right: 1px solid grey;
+    margin: 2px 10px;
+    min-width: 75px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features > p {
+    margin-right: 15px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+.year, .temporadas, .serie {
+    color: grey;
+}
+
+.edad {
+    background-color: red;
+    color: rgb(255, 255, 255); 
+}
+
+.article-text {
+    position: relative;
+    top: 270px;
+    max-width: 700px;
+}
+
+.article-text > p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: light;
+}
+
+.article-button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 300px;
+    max-width: 275px;
+}
+
+.button-play {
+    background-color: red;
+    margin-right: 10px;
+    border-radius: 5px;
+    max-width: 155px;
+    margin: 5px 5px;
+}
+
+.button-mylist {
+    border: 1px solid grey;
+    border-radius: 5px;
+    max-width: 155px;
+    margin: 5px 5px;
+}
+
+.button {
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 5px 25px;
+}
+
+/*----------------------------------*/
+
+.div-watch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 350px;
+}
+
+.play-img {
+    width: auto;
+    height: 70px;
+}
+
+.play-p {
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding: 5px 15px;
+}
+
+.header__img:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(235, 210, 177);
+}
+
+.article-button:hover {
+    cursor: pointer;
+}
+
+.button-play:hover {
+    background-color: rgb(127, 15, 15);
+}
+
+.button-mylist:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+@media screen and (min-width:1200px){
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 100px;
+    }
+
+    .header__img {
+        margin-left: 50px;
+    }
+
+    .header__nav {
+        position: relative;
+        top: 10px;
+    }
+
+    .header-search {
+        max-width: 350px;
+        margin-right: 50px;
+    }
+}
+    
+

@@ -1,0 +1,182 @@
+/*SI HAY MUCHOS ELEMENTOS IGUALES (EN ESTE CASO LOS "ball* O LOS "character
+RECOMIENDO HACER SOLO UNO DE ELLOS, UNA VEZ QUE YA TENGAS EL DISEÑO TAL COMO LO 
+QUIERES, SIMPLEMENTE HAZ COPIAR Y PEGAR Y AJUSTALO A LAS NECESIDADES DE CADA UNO,
+ASÍ DE FÁCIL, NO INTENTES HACER TODAS LAS COSAS A LA VEZ*/
+
+*{
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 40);
+}
+
+.ball1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: -20px;
+    left: 200px;
+    background: linear-gradient(rgb(253, 193, 64), rgb(253, 55, 124));
+}
+
+.ball2 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    bottom: -20px;
+    right: 200px;
+    background: linear-gradient(rgb(64, 155, 253), rgb(55, 253, 71));
+}
+
+.container {
+    width: 400px;
+    height: 650px;
+    padding: 30px 0 0 30px;
+    border-radius: 25px;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.container-title {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container-character {
+    display: flex;
+    width: 338px;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    transition: transform 0.5s, background 0.5s, width 0.5s;
+}
+
+.img-container {
+    width: fit-content;
+}
+
+img {
+    object-fit: cover;
+    object-position: top;
+    width: 75px;
+    height: 75px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.moe {
+    background-color: rgb(77, 77, 237);
+}
+
+.marge {
+    background-color: rgb(237, 77, 114);
+}
+
+.homero {
+    background-color: rgb(93, 207, 116);
+}
+
+.lisa {
+    background-color: rgb(237, 170, 77);
+}
+
+.bart {
+    background-color: rgb(77, 152, 237);
+}
+
+.character-description {
+    color: white;
+}
+
+.character-name {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*--------------------------------------*/
+
+.container-character:hover {
+    transform: translateX(10px) translateY(-20px);
+    background: white;
+    width: 400px;
+}
+
+.container-character:hover .character-description {
+    color: black;
+}
+
+.container-character:hover::before {
+    content: "";
+    color: rgba(44, 121, 168, 0.5);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 35px;
+    right: 75px;
+}
+
+.container-character:hover::after {
+    content: "";
+    color: rgb(44, 121, 168);
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    filter: brightness(125%);
+}
+
+.character1:hover::before{
+    content: "#";
+}
+
+.character1:hover::after {
+    content: "1";
+}
+
+.character2:hover::before{
+    content: "#";
+}
+
+.character2:hover::after {
+    content: "2";
+}
+
+.character3:hover::before{
+    content: "#";
+}
+
+.character3:hover::after {
+    content: "3";
+}
+
+.character4:hover::before{
+    content: "#";
+}
+
+.character4:hover::after {
+    content: "4";
+}
+
+.character5:hover::before{
+    content: "#";
+}
+
+.character5:hover::after {
+    content: "5";
+}

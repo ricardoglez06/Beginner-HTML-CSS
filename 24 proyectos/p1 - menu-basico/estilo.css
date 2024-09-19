@@ -1,0 +1,77 @@
+*{
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 5, 5);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-adidas {
+    height: 65px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nombre-compañia {
+    position: relative;
+    left: -5px;
+}
+
+nav {
+    position: relative;
+    top: 10px;
+    padding: 25px 0;
+}
+
+nav a{
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    color: cadetblue;
+}
+
+@media screen and (min-width: 825px){
+    header{
+        flex-direction: row;
+        min-height: 100px;
+    }
+
+    .logo {
+       position: absolute;
+       left: 50px;
+    }
+
+    .nombre-compañia{
+        font-size: 1.5rem;
+    }
+
+    nav {
+        position: absolute;
+        right: 50px;
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        justify-content: center;
+        align-items: center;
+    }
+}

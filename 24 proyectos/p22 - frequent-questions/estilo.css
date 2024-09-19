@@ -1,0 +1,130 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 236, 252);
+    overflow: hidden;
+}
+
+.container {
+    width: 552px;
+}
+
+.question {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    height: 70px;
+    transition: height 1s, background 1s;
+    margin-bottom: 20px;
+}
+
+.question__top {
+    display: flex;
+    align-items: center;
+}
+
+.question__number {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.question__number1 {
+    background: linear-gradient(to right, #76B947, #116530);
+}
+.question__number2 {
+    background: linear-gradient(to right, #189AB4, #05445E);
+}
+.question__number3 {
+    background: linear-gradient(to right, #FB8DA0, #FB4570);
+}
+.question__number4 {
+    background: linear-gradient(to right, #F6A21E, #E55B13);
+}
+
+.question__h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.question__bottom {
+    position: relative;
+    top: 35px;
+    opacity: 0;
+}
+
+.question__p {
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+
+.question:hover{
+    height: 200px;
+}
+
+.question1:hover {
+    background: linear-gradient(to right, #76B947, #116530);
+}
+.question2:hover {
+    background: linear-gradient(to right, #189AB4, #05445E);
+}
+.question3:hover {
+    background: linear-gradient(to right, #FB8DA0, #FB4570);
+}
+.question4:hover {
+    background: linear-gradient(to right, #F6A21E, #E55B13);
+}
+
+.question:hover .question__number {
+    display: none;
+}
+
+.question:hover .question__h3 {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.question1:hover::after {
+    content: "01";
+}
+.question2:hover::after {
+    content: "02";
+}
+.question3:hover::after {
+    content: "03";
+}
+.question4:hover::after {
+    content: "04";
+}
+
+.question:hover::after {
+    color: white;
+    filter: opacity(10%);
+    font-size: 8rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.question:hover .question__bottom {
+    opacity: 1;
+}

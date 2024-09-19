@@ -1,0 +1,180 @@
+* {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 550px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 50px;
+    box-shadow: 0 0 15px grey;
+}
+
+.clip-path {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgba(152, 252, 252, 1);
+    top: -100px;
+    right: -100px;
+    transition: transform, top 0.5s;
+}
+
+.container__img{
+    position: relative;
+    top: 50px;
+    transition: transform 0.5s;
+}
+
+.container__title {
+    font-size: 1.5rem;
+    position: relative;
+    top: 60px;
+    transition: transform 0.5s;
+}
+
+.container__size {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    transition: transform 1s;
+}
+
+.container__size-title {
+    margin-right: 15px;
+}
+
+.container__size-numbers {
+    display: flex;
+    flex: row;
+}
+
+.container__size-numbers > .numbers {
+    background-color: white;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__size-numbers > .numbers > p {
+    color: black;
+}
+
+.container__color {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+    top: 150px;
+    transition: transform 1s;
+}
+
+.container__color-title {
+    margin-right: 15px;
+}
+
+.container__color > .colors {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.container__color > .green {
+    background-color: rgb(69, 212, 69);
+}
+
+.container__color > .blue {
+    background-color: rgb(69, 205, 212);
+}
+
+.container__color > .red {
+    background-color: rgb(229, 33, 19);
+}
+
+.container__button {
+    width: 150px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    transition: transform 1s;
+}
+
+.container__button > p {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.container:hover > .clip-path{
+    width: 700px;
+    height: 700px;
+    top: -200px;
+    right: -200px;
+    transform: translateY(-300px);
+}
+
+.container:hover > .container__img {
+    transform: translateY(-95px);
+}
+
+.container:hover > .container__title {
+    transform: translateY(-95px);
+}
+
+.container:hover > .container__size {
+    transform: translateY(-225px);
+}
+
+.container:hover > .container__color {
+    transform: translateY(-170px);
+}
+
+.container:hover > .container__button {
+    transform: translateY(-150px);
+}
+
+.numbers:hover{
+    cursor: pointer;
+    background-color: rgb(255, 182, 47);
+}
+
+.colors:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.container__button:hover {
+    cursor: pointer;
+    background-color: rgb(81, 216, 171);
+}
